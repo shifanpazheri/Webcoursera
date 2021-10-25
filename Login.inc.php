@@ -38,6 +38,7 @@ if ($result->num_rows == 1) {
 
       $_SESSION["username"] = $username;
       $_SESSION["name"] = $row["fname"] ;
+      $_SESSION["logg"] = "1";
   }
   else {
      echo "<script type=\"text/javascript\"> alert('Wrong password');</script>";
