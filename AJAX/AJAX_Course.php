@@ -83,6 +83,56 @@ a:active {
 </style>
 </head>
 <body>
+<?php
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['av1'])){
+    updatedb("ajax","v1");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=dtrWHL9Asec&list=PL75533094B526EBAC&index=1");
+  }
+  if(isset($_POST['av2'])){
+    updatedb("ajax","v2");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=lX5e0_3hvOw&list=PL75533094B526EBAC&index=2");
+  }
+  if(isset($_POST['av3'])){
+    updatedb("ajax","v3");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=ZImyZeO4VBc&list=PL75533094B526EBAC&index=3");
+  }
+  if(isset($_POST['av4'])){
+    updatedb("ajax","v4");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=c3Dcyz9PDwc&list=PL75533094B526EBAC&index=4");
+  }
+  if(isset($_POST['av5'])){
+    updatedb("ajax","v5");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=xv3plu45yZ4&list=PL75533094B526EBAC&index=5");
+  }
+  if(isset($_POST['av6'])){
+    updatedb("ajax","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=UhUCg11M5Nw&list=PL75533094B526EBAC&index=6");
+  }
+  if(isset($_POST['av7'])){
+    updatedb("ajax","v7");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uthxzVAo4ws&list=PL75533094B526EBAC&index=7");
+  }
+  if(isset($_POST['av8'])){
+    updatedb("ajax","v8");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=A6iu0Ma1xl4&list=PL75533094B526EBAC&index=8");
+  }
+}
+
+
+ 
+?>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -115,7 +165,7 @@ a:active {
   <p>Professional Ajax, 2nd Edition</p>
   <p>Head First Ajax</p>
   <h3 >No of Lectures: 8</h3>
-  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX_short.html">Short</a></button> <td><a href="AJAX_long.html"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
+  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX_short.php">Short</a></button> <td><a href="AJAX_long.php"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
   <table class="table table-condensed">
     <thead  style="background-color: #737373;">
       <tr>
@@ -126,43 +176,44 @@ a:active {
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=dtrWHL9Asec&list=PL75533094B526EBAC&index=1">AJAX Tutorial - Introduction</a></td>
+      <td>1</td>
+        <td><form method="POST" action="#"><input type="submit"  id="av1" name="av1" value ="AJAX Tutorial - Introduction"/></form></td>
         <td>3:21</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=lX5e0_3hvOw&list=PL75533094B526EBAC&index=2">Ajax Tutorial 2 System Requirements</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="av2" name="av2" value ="Ajax Tutorial 2 System Requirements"/></form></td>
         <td>06:35</td>
       </tr>
+      
       <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=ZImyZeO4VBc&list=PL75533094B526EBAC&index=3">Ajax Tutorial 3 - Getting to know Ajax</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="av3" name="av3" value ="AJAX Tutorial 3 - Getting to know Ajax"/></form></td>
         <td>3:09</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=c3Dcyz9PDwc&list=PL75533094B526EBAC&index=4">Ajax tutorial 4 Modifying Web Pages on the Fly</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="av4" name="av4" value ="AJAX Tutorial 4 Modifying Web Pages on the Fly"/></form></td>
         <td>05:30</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><a href="https://www.youtube.com/watch?v=xv3plu45yZ4&list=PL75533094B526EBAC&index=5">Ajax tutorials 5 Searching in Real Time with Live Searches</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="av5" name="av5" value ="Ajax tutorials 5 Searching in Real Time with Live Searches"/></form></td>
         <td>3:05</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=UhUCg11M5Nw&list=PL75533094B526EBAC&index=6">Ajax Tutorial 6 Getting the Answer With Autocomplete</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="av6" name="av6" value ="Ajax tutorials 6 Getting the Answer With Autocomplete"/></form></td>
         <td>3:10</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><a href="https://www.youtube.com/watch?v=uthxzVAo4ws&list=PL75533094B526EBAC&index=7">Dragging and Dropping HTML Elements With Ajax - 7</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="av7" name="av7" value ="Dragging and Dropping HTML Elements With Ajax - 7"/></form></td>
         <td>05:43</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=A6iu0Ma1xl4&list=PL75533094B526EBAC&index=8">Getting instant login feedback Ajax Tutorial 8</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="av8" name="av8" value ="Getting instant login feedback Ajax Tutorial 8"/></form></td>
         <td>10:13</td>
       </tr>
     </tbody>
