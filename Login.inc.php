@@ -17,6 +17,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 
+
 /*echo $username;
 echo "<br>";
 echo $password;
@@ -34,6 +35,10 @@ if ($result->num_rows == 1) {
   {
       echo "<script type=\"text/javascript\"> alert('Sucessfully logged in');</script>";
       echo "<script>setTimeout(\"location.href = 'home.php';\",500);</script>";
+
+      $_SESSION["username"] = $username;
+      $_SESSION["name"] = $row["fname"] ;
+      $_SESSION["logg"] = "1";
   }
   else {
      echo "<script type=\"text/javascript\"> alert('Wrong password');</script>";
