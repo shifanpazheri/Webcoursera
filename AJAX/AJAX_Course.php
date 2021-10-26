@@ -83,6 +83,24 @@ a:active {
 </style>
 </head>
 <body>
+  <script>
+function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","../livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
 <?php
   include ("../func.php") ;
 
@@ -152,15 +170,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }?>
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
-
-
         <p>
             <div class="input-group" >
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button" style="padding-top: 6px;"><span class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div><!-- /input-group -->
+              <form>
+              <input type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search Courses...."  style=" padding-bottom: 12px padding-top: 12px;">
+              <div id="livesearch"></div>
+            </form>
+            <span class="input-group-btn">
+              <button class="btn btn-default" size: "30" stype="button"  style="font-size: 9px;"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+            </div>
          </p>
     </div>
     </div>
@@ -172,7 +191,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   <p>Professional Ajax, 2nd Edition</p>
   <p>Head First Ajax</p>
   <h3 >No of Lectures: 8</h3>
-  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX/AJAX_short.php">Short</a></button> <td><a href="/AJAX_long.php"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
+  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX_Short.php">Short</a></button> <td><a href="AJAX_Long.php"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
   <table class="table table-condensed">
     <thead  style="background-color: #737373;">
       <tr>
