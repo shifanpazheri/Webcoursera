@@ -66,7 +66,9 @@
   color: orange;
 }
 body {
-  background-color: #e6e6e6;
+  //background-color: #e6e6e6;
+background-color: #ffffff;
+ background-image: url("bg1.jpg");
 }
 table.table-bordered{
     border:2px solid  black;
@@ -78,6 +80,7 @@ table.table-bordered > thead > tr > th{
 }
 table.table-bordered > tbody > tr > td{
     border:2px solid black;
+background-color: #ffffff;
 }
 
 
@@ -136,20 +139,23 @@ function showResult(str) {
   </div>
   </div>
 </nav>
-<div class="container">
-  <div class="jumbotron">
+<div class="container" style="color: #ffffff;">
+  <div class="jumbotron" style="background-image: url('bg.jpg');">
     <h1>Webcoursera</h1>
-   <p>Welcome to Webcoursera</p>
+   <p >Welcome to Webcoursera</p>
     <p>Webcoursera has the most popular HTML, CSS, JS and other related courses for developing
     responsive, mobile-first projects on the web.</p>
   </div>
 </div>
-  <?php
+<div style="border:2px solid black; margin-left: 1350px; text-align:center ;background-color: #737373;">
+<div style="text-align:right; color: #000000; padding-right: 20px; border:2px solid black;background-color: #ffffff;">Registered Users </div>
+<div style="text-align:right; padding-right: 30px; color: #ffffff;">
+ <?php
  $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "webcoursera";
-
+$ind = 1;
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -161,25 +167,27 @@ $sql = "SELECT  fname, lname FROM auth";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo " Name: " . $row["fname"]. " " . $row["lname"]. "<br>";
+    echo " ".$ind.".".$row["fname"]. " " . $row["lname"]. "<br>";
+   $ind=$ind + 1;
   }
 } else {
   echo "0 results";
 }
 $conn->close();
 ?>
-<h1 style="text-align:center;">Courses </h1>
+</div>
+</div>
+<h1 style="text-align:center;color: #ffffff; ">Courses </h1>
 
 <div class="container">
 
-  <table class="table table-bordered" style="text-align:center;" ">
+  <table class="table table-bordered" style="text-align:center;" >
     <thead style="text-align:center;background-color: #737373;">
       <tr style="text-align:center;" >
-        <th style="text-align:center;">HTML</th>
-        <th style="text-align:center;">CSS</th>
-        <th style="text-align:center;">JAVASCRIPT</th>
+        <th style="text-align:center; color: #ffffff; ">HTML</th>
+        <th style="text-align:center; color: #ffffff;">CSS</th>
+        <th style="text-align:center; color: #ffffff; ">JAVASCRIPT</th>
       </tr>
     </thead>
     <tbody style="text-align:center;">
@@ -204,7 +212,7 @@ $conn->close();
       }
       else {
         echo '<div><a class="btn btn-primary" href="html1.php" role="button">Enroll Now</a></div>' ;
-        echo checkenroll("html",$_SESSION["username"]) ;
+       //echo checkenroll("html",$_SESSION["username"]) ;
       }
 
     } else {
@@ -277,11 +285,11 @@ $conn->close();
     </tbody>
   </table>
   <table  class="table table-bordered" style="text-align:center;">
-    <thead style="text-align:center;background-color: #737373;>
+    <thead style="text-align:center;background-color: #737373;">
       <tr style="text-align:center;">
-        <th style="text-align:center;">JAVA</th>
-        <th style="text-align:center;">AJAX</th>
-        <th style="text-align:center;">PYTHON</th>
+        <th style="text-align:center; color: #ffffff;">JAVA</th>
+        <th style="text-align:center; color: #ffffff;">AJAX</th>
+        <th style="text-align:center; color: #ffffff;">PYTHON</th>
       </tr>
     </thead>
     <tbody style="text-align:center;">

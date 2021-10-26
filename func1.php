@@ -24,7 +24,7 @@ function online($table){
         $a=$row["A"];
     }
     else{$a=0;}
-    echo $a;
+   echo $a;
     $conn->close();
     
 

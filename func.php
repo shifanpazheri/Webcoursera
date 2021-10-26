@@ -37,9 +37,8 @@ function checkdb($table, $conn,$user){
 
     
     if($flag == 0){                 
-      $sql = "DELETE from `courses` WHERE `username` ='$user' AND `course_name` = '$table' "; 
-
-      if ($conn->query($sql) === TRUE) {
+$sql = "DELETE from ".$table." WHERE `username` ='$user'" ;  
+    if ($conn->query($sql) === TRUE) {
         echo "Record updated successfully";
       } else {
         echo "Error updating record: " . $conn->error;
