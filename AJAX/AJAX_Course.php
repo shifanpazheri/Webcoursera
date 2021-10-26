@@ -141,8 +141,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
       <ul class="nav navbar-nav">
         <li class="active"><a href="home.html">Home</a></li>
         <li><a href="#" >Categories</a></li>
-        <li><a href="Login.html" >Login</a></li>
-        <li><a href="Signup.html">Sign up</a></li>
+        <?php
+      session_start();
+      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){ 
+        echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
+        echo "<li><a href=\"logout.php\">Log Out</a></li>";
+      } else {
+        
+        echo "<li><a href=\"login.php\">Log In</a></li>";
+      }?>
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
 
