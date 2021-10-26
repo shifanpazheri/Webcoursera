@@ -83,6 +83,34 @@
 </style>
 </head>
 <body>
+<?php
+
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  if(isset($_POST['jsv3'])){
+    updatedb("javascript","v3");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=3");
+  }
+  if(isset($_POST['jsv4'])){
+    updatedb("javascript","v4");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=4");
+  }
+  if(isset($_POST['jsv6'])){
+    updatedb("javascript","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=6");
+  }
+  if(isset($_POST['jsv8'])){
+    updatedb("javascript","v8");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=8");
+  }
+}
+
+?>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -135,22 +163,22 @@ Book by Marijn Haverbeke</p>
     <tbody>
       <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=3">What is Dom? | Document Object Model</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv3" name="jsv3" value =What is Dom? | Document Object Model"/></form></td>
         <td>10:26</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=4">First Hello World Program</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv4" name="jsv4" value ="First Hello World Program"/></form></td>
         <td>10:02</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=6">VS code Theme & Live Server Plugin Setup</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv6" name="jsv6" value ="VS code Theme & Live Server Plugin Setup"/></form></td>
         <td>12:07</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=8">Operators</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv8" name="jsv8" value ="Operators"/></form></td>
         <td>12:28</td>
       </tr>
     </tbody>

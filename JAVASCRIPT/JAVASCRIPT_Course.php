@@ -84,6 +84,55 @@
 </style>
 </head>
 <body>
+<?php
+
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['jsv1'])){
+    updatedb("javascript","v1");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uDwSnnhl1Ng&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV");
+  }
+  if(isset($_POST['jsv2'])){
+    updatedb("javascript","v2");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=2");
+  }
+  if(isset($_POST['jsv3'])){
+    updatedb("javascript","v3");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=3");
+  }
+  if(isset($_POST['jsv4'])){
+    updatedb("javascript","v4");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=4");
+  }
+  if(isset($_POST['jsv5'])){
+    updatedb("javascript","v5");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=5");
+  }
+  if(isset($_POST['jsv6'])){
+    updatedb("javascript","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=6");
+  }
+  if(isset($_POST['jsv7'])){
+    updatedb("javascript","v7");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=7");
+  }
+  if(isset($_POST['jsv8'])){
+    updatedb("javascript","v8");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=8");
+  }
+}
+
+?>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -136,42 +185,42 @@ Book by Marijn Haverbeke</p>
     <tbody>
       <tr>
         <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=uDwSnnhl1Ng&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV">Introduction</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv1" name="jsv1"  value ="Introduction"/></form></td>
         <td>02:44</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=2">Why you should Learn JavaScript Today</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv2" name="jsv2" value ="Why you should Learn JavaScript Today"/></form></td>
         <td>06:48</td>
       </tr>
       <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=3">What is Dom? | Document Object Model</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv3" name="jsv3" value =What is Dom? | Document Object Model"/></form></td>
         <td>10:26</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=4">First Hello World Program</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv4" name="jsv4" value ="First Hello World Program"/></form></td>
         <td>10:02</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=5">Statements and comments</a></td>
+<td><form method="POST" action="#"><input type="submit"  id="jsv5" name="jsv5" value ="Statements and comments"/></form></td>
         <td>06:21</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=6">VS code Theme & Live Server Plugin Setup</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv6" name="jsv6" value ="VS code Theme & Live Server Plugin Setup"/></form></td>
         <td>12:07</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=7">Variables & Data Types</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv7" name="jsv7" value ="Variables & Data Types"/></form></td>
         <td>09:31</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=uxWO8Sd8PoY&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=8">Operators</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jsv8" name="jsv8" value ="Operators"/></form></td>
         <td>12:28</td>
       </tr>
     </tbody>
