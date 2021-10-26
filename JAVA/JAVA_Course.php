@@ -84,6 +84,67 @@ a:active {
 </style>
 </head>
 <body>
+
+<?php
+
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['jv1'])){
+    updatedb("java","v1");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=yMkFYxrDL2M&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt");
+  }
+  if(isset($_POST['jv2'])){
+    updatedb("java","v2");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=IUqKuGNasdM&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=2");
+  }
+  if(isset($_POST['jv3'])){
+    updatedb("java","v3");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=3");
+  }
+  if(isset($_POST['jv4'])){
+    updatedb("java","v4");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=4");
+  }
+  if(isset($_POST['jv5'])){
+    updatedb("java","v5");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=5");
+  }
+  if(isset($_POST['jv6'])){
+    updatedb("java","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=6");
+  }
+  if(isset($_POST['jv7'])){
+    updatedb("java","v7");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=7");
+  }
+  if(isset($_POST['jv8'])){
+    updatedb("java","v8");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=8");
+  }
+if(isset($_POST['jv9'])){
+    updatedb("java","v9");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=FWoYpM-E3EQ&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=9");
+  }
+if(isset($_POST['jv10'])){
+    updatedb("java","v10");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=M_0q6rGUsNc&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=10");
+  }
+}
+
+?>
+
   <script>
 function showResult(str) {
   if (str.length==0) {
@@ -102,6 +163,7 @@ function showResult(str) {
   xmlhttp.send();
 }
 </script>
+
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -154,52 +216,52 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=yMkFYxrDL2M&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt">Java Strings Tutorial</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv1" name="jv1" value ="Java Strings Tutorial"/></form></td>
         <td>09:04</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=IUqKuGNasdM&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=2">Java Classes and Objects</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv2" name="jv2" value ="Java Classes and Objects"/></form></td>
         <td>11:36</td>
       </tr>
       <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=3">Java Interface Tutorial</a></td>
-        <td>14:49</td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv3" name="jv3" value ="Java Interface Tutorial"/></form></td>        
+<td>14:49</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=4">Java Exception Handling Tutorial</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv4" name="jv4" value ="Java Exception Handling Tutorial"/></form></td>
         <td>11:39</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><a href="https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=5">Java File I/O (Reading and Writing)</a></td>
+<td><form method="POST" action="#"><input type="submit"  id="jv5" name="jv5" value ="Java File I/O (Reading and Writing)"/></form></td>
         <td>06:58</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=6">Java Enum Tutorial</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv6" name="jv6" value ="Java Enum Tutorial"/></form></td>
         <td>06:23</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><a href="https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=7">Java Generics Tutorial</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv7" name="jv7" value ="Java Generics Tutorial"/></form></td>
         <td>12:23</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=Yat8l37XGFA&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=8">Object Oriented Programming - The Four Pillars of OOP</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv8" name="jv8" value ="Object Oriented Programming - The Four Pillars of OOP"/></form></td>
         <td>11:23</td>
       </tr>
        <tr>
         <td>9</td>
-        <td><a href="https://www.youtube.com/watch?v=FWoYpM-E3EQ&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=9">Java Streams Tutorial</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv9" name="jv9" value ="Java Streams Tutorial"/></form></td>
         <td>07:56</td>
       </tr>
        <tr>
         <td>10</td>
-        <td><a href="https://www.youtube.com/watch?v=M_0q6rGUsNc&list=PLuVT2Ug8ISOUeumoUczDqraT_EO6qFdWt&index=10">Array List vs Linked List | Which one should you use??</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="jv10" name="jv10" value ="Array List vs Linked List | Which one should you use??"/></form></td>
         <td>07:57</td>
       </tr>
     </tbody>
