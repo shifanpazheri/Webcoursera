@@ -84,6 +84,7 @@ a:active {
 </style>
 </head>
 <body>
+
 <?php
 
   include ("../func.php") ; 
@@ -118,6 +119,26 @@ if(isset($_POST['jv10'])){
 }
 
 ?>
+
+  <script>
+function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","../livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -137,15 +158,16 @@ if(isset($_POST['jv10'])){
         }?>
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 10px;" >
-
-
         <p>
             <div class="input-group" >
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button" style="padding-top: 5px;"><span class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div><!-- /input-group -->
+              <form>
+              <input type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search Courses...."  style=" padding-bottom: 12px padding-top: 12px;">
+              <div id="livesearch"></div>
+            </form>
+            <span class="input-group-btn">
+              <button class="btn btn-default" size: "30" stype="button"  style="font-size: 9px;"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+            </div>
          </p>
     </div>
     </div>

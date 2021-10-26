@@ -83,6 +83,26 @@ a:active {
 </style>
 </head>
 <body>
+
+  <script>
+  function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","../livesearch.php?q="+str,true);
+  xmlhttp.send();
+  }
+  </script>
+
 <?php
 
   include ("../func.php") ;
@@ -124,25 +144,26 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <?php
 
       session_start();
-      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){ 
+      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
         echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
         echo "<li><a href=\"../logout.php\">Log Out</a></li>";
       } else {
-        
+
         echo "<li><a href=\"../login.php\">Log In</a></li>";
       }?>
 
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
-
-
         <p>
             <div class="input-group" >
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button" style="padding-top: 6px;"><span class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div><!-- /input-group -->
+              <form>
+              <input type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search Courses...."  style=" padding-bottom: 12px padding-top: 12px;">
+              <div id="livesearch"></div>
+            </form>
+            <span class="input-group-btn">
+              <button class="btn btn-default" size: "30" stype="button"  style="font-size: 9px;"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+            </div>
          </p>
     </div>
     </div>
