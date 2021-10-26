@@ -87,7 +87,7 @@ a:active {
         <a class="navbar-brand" href="#">Webcoursera</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.php">Home</a></li>
+        <li class="active"><a href="../home.php">Home</a></li>
         <li><a href="#" >Categories</a></li>
         <li><a href="Login.php" >Login</a></li>
         <li><a href="Signup.php">Sign up</a></li>
