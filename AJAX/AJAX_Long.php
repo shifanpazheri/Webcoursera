@@ -89,15 +89,15 @@ a:active {
         <a class="navbar-brand" href="#">Webcoursera</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="../home.php">Home</a></li>
         <li><a href="#" >Categories</a></li>
         <?php
       session_start();
-      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){ 
+      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
         echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
         echo "<li><a href=\"logout.php\">Log Out</a></li>";
       } else {
-        
+
         echo "<li><a href=\"login.php\">Log In</a></li>";
       }?>
       </ul>
@@ -123,8 +123,8 @@ a:active {
   <p>Professional Ajax, 2nd Edition</p>
   <p>Head First Ajax</p>
   <h3 >No of Lectures: 8</h3>
-  <h3>Current Category: <button type="button" class="btn btn-secondary"><td><a href="AJAX_long.html">Long</a> </td></h3></button>
-  <h3>Categories: <button type="button" class="btn btn-secondary"><td><a href="AJAX_short.html">Short</a></button> <td><button type="button" class="btn btn-secondary"><a href="AJAX_long.html">Long</a> </button></td></h3>
+  <h3>Current Category: <button type="button" class="btn btn-secondary"><td><a href="AJAX_long.php">Long</a> </td></h3></button>
+  <h3>Categories: <button type="button" class="btn btn-secondary"><td><a href="AJAX_short.php">Short</a></button> <td><button type="button" class="btn btn-secondary"><a href="AJAX_long.php">Long</a> </button></td></h3>
   <table class="table table-condensed">
     <thead style="background-color: #737373;">
       <tr>
@@ -177,23 +177,23 @@ a:active {
             <h4>Courses</h4>
             <div class="col-md-6">
                   <ul class="pages">
-                      <li><a href="PYTHON_Course.html">PYTHON</a></li>
-                      <li><a href="AJAX_Course.html">AJAX</a></li>
-                      <li><a href="JAVA_Course.html">JAVA</a></li>
-                      <li><a href="JAVASCRIPT_Course.html">JAVASCRIPT</a></li>
-                      <li><a href="HTML_Course.html">HTML</a></li>
-                      <li><a href="CSS_Course.html">CSS</a></li>
+                    <li><a href="../PYTHON/PYTHON_Course.php">PYTHON</a></li>
+                    <li><a href="../AJAX/AJAX_Course.php">AJAX</a></li>
+                    <li><a href="../JAVA/JAVA_Course.php">JAVA</a></li>
+                    <li><a href="../JAVASCRIPT/JAVASCRIPT_Course.php">JAVASCRIPT</a></li>
+                    <li><a href="../HTML/HTML_Course.php">HTML</a></li>
+                    <li><a href="../CSS/CSS_Course.php">CSS</a></li>
                   </ul>
               </div>
         </div>
         <div class="col-md-2 footer-social animated fadeInDown">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="extra.html#about">About us</a></li>
-            <li><a href="extra.html#contact">Contact Us</a></li>
-            <li><a href="extra.html#privacy">Privacy Policy</a></li>
-            <li><a href="extra.html#terms">Terms And Conditions</a></li>
-            <li><a href="extra.html#help">Help And Support</a></li>
+            <li><a href="../extra.php#about">About us</a></li>
+            <li><a href="../extra.php#contact">Contact Us</a></li>
+            <li><a href="../extra.php#privacy">Privacy Policy</a></li>
+            <li><a href="../extra.php#terms">Terms And Conditions</a></li>
+            <li><a href="../extra.php#help">Help And Support</a></li>
           </ul>
       </div>
         </div>

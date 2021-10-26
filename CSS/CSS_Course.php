@@ -89,7 +89,7 @@ a:active {
         <a class="navbar-brand" href="#">Webcoursera</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.php">Home</a></li>
+        <li class="active"><a href="../home.php">Home</a></li>
         <li><a href="#" >Categories</a></li>
         <li><a href="Login.php" >Login</a></li>
         <li><a href="Signup.php">Sign up</a></li>
@@ -190,23 +190,23 @@ a:active {
             <h4>Courses</h4>
             <div class="col-md-6">
                   <ul class="pages">
-                      <li><a href="PYTHON_Course.php">PYTHON</a></li>
-                      <li><a href="AJAX_Course.php">AJAX</a></li>
-                      <li><a href="JAVA_Course.php">JAVA</a></li>
-                      <li><a href="JAVASCRIPT_Course.php">JAVASCRIPT</a></li>
-                      <li><a href="HTML_Course.php">HTML</a></li>
-                      <li><a href="CSS_Course.php">CSS</a></li>
+                    <li><a href="../PYTHON/PYTHON_Course.php">PYTHON</a></li>
+                    <li><a href="../AJAX/AJAX_Course.php">AJAX</a></li>
+                    <li><a href="../JAVA/JAVA_Course.php">JAVA</a></li>
+                    <li><a href="../JAVASCRIPT/JAVASCRIPT_Course.php">JAVASCRIPT</a></li>
+                    <li><a href="../HTML/HTML_Course.php">HTML</a></li>
+                    <li><a href="../CSS/CSS_Course.php">CSS</a></li>
                   </ul>
               </div>
         </div>
         <div class="col-md-2 footer-social animated fadeInDown">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="extra.php#about">About us</a></li>
-            <li><a href="extra.php#contact">Contact Us</a></li>
-            <li><a href="extra.php#privacy">Privacy Policy</a></li>
-            <li><a href="extra.php#terms">Terms And Conditions</a></li>
-            <li><a href="extra.php#help">Help And Support</a></li>
+            <li><a href="../extra.php#about">About us</a></li>
+            <li><a href="../extra.php#contact">Contact Us</a></li>
+            <li><a href="../extra.php#privacy">Privacy Policy</a></li>
+            <li><a href="../extra.php#terms">Terms And Conditions</a></li>
+            <li><a href="../extra.php#help">Help And Support</a></li>
           </ul>
       </div>
         </div>

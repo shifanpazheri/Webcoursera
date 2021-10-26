@@ -84,10 +84,10 @@ a:active {
 </head>
 <body>
 <?php
-  include ("../func.php") ; 
-  
+  include ("../func.php") ;
+
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-  
+
   if(isset($_POST['av1'])){
     updatedb("ajax","v1");
     unset($_POST);
@@ -131,7 +131,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 }
 
 
- 
+
 ?>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -139,10 +139,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <a class="navbar-brand" href="#">Webcoursera</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="../home.php">Home</a></li>
         <li><a href="#" >Categories</a></li>
-        <li><a href="Login.html" >Login</a></li>
-        <li><a href="Signup.html">Sign up</a></li>
+        <li><a href="Login.php" >Login</a></li>
+        <li><a href="Signup.php">Sign up</a></li>
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
 
@@ -165,7 +165,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   <p>Professional Ajax, 2nd Edition</p>
   <p>Head First Ajax</p>
   <h3 >No of Lectures: 8</h3>
-  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX/AJAX_short.html">Short</a></button> <td><a href="/AJAX_long.html"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
+  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX/AJAX_short.php">Short</a></button> <td><a href="/AJAX_long.php"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
   <table class="table table-condensed">
     <thead  style="background-color: #737373;">
       <tr>
@@ -185,7 +185,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <td><form method="POST" action="#"><input type="submit"  id="av2" name="av2" value ="Ajax Tutorial 2 System Requirements"/></form></td>
         <td>06:35</td>
       </tr>
-      
+
       <tr>
         <td>3</td>
         <td><form method="POST" action="#"><input type="submit"  id="av3" name="av3" value ="AJAX Tutorial 3 - Getting to know Ajax"/></form></td>
@@ -239,23 +239,23 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             <h4>Courses</h4>
             <div class="col-md-6">
                   <ul class="pages">
-                      <li><a href="PYTHON_Course.html">PYTHON</a></li>
-                      <li><a href="AJAX_Course.html">AJAX</a></li>
-                      <li><a href="JAVA_Course.html">JAVA</a></li>
-                      <li><a href="JAVASCRIPT_Course.html">JAVASCRIPT</a></li>
-                      <li><a href="HTML_Course.html">HTML</a></li>
-                      <li><a href="CSS_Course.html">CSS</a></li>
+                    <li><a href="../PYTHON/PYTHON_Course.php">PYTHON</a></li>
+                    <li><a href="../AJAX/AJAX_Course.php">AJAX</a></li>
+                    <li><a href="../JAVA/JAVA_Course.php">JAVA</a></li>
+                    <li><a href="../JAVASCRIPT/JAVASCRIPT_Course.php">JAVASCRIPT</a></li>
+                    <li><a href="../HTML/HTML_Course.php">HTML</a></li>
+                    <li><a href="../CSS/CSS_Course.php">CSS</a></li>
                   </ul>
               </div>
         </div>
         <div class="col-md-2 footer-social animated fadeInDown">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="extra.html#about">About us</a></li>
-            <li><a href="extra.html#contact">Contact Us</a></li>
-            <li><a href="extra.html#privacy">Privacy Policy</a></li>
-            <li><a href="extra.html#terms">Terms And Conditions</a></li>
-            <li><a href="extra.html#help">Help And Support</a></li>
+            <li><a href="../extra.php#about">About us</a></li>
+            <li><a href="../extra.php#contact">Contact Us</a></li>
+            <li><a href="../extra.php#privacy">Privacy Policy</a></li>
+            <li><a href="../extra.php#terms">Terms And Conditions</a></li>
+            <li><a href="../extra.php#help">Help And Support</a></li>
           </ul>
       </div>
         </div>
