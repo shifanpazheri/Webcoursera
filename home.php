@@ -90,8 +90,15 @@ table.table-bordered > tbody > tr > td{
     <ul class="nav navbar-nav">
       <li class="active"><a href="home.php">Home</a></li>
       <li><a href="#" >Categories</a></li>
-      <li><a href="Login.php" >Login</a></li>
-      <li><a href="Signup.php">Sign up</a></li>
+      <?php
+      session_start();
+      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){ 
+        echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
+        echo "<li><a href=\"logout.php\">Log Out</a></li>";
+      } else {
+        
+        echo "<li><a href=\"login.php\">Log In</a></li>";
+      }?>
     </ul>
     <div style="display: flex; justify-content: flex-end;padding-top: 10px;" >
 
@@ -115,6 +122,32 @@ table.table-bordered > tbody > tr > td{
     responsive, mobile-first projects on the web.</p>
   </div>
 </div>
+  <?php
+ $servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "webcoursera";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT  fname, lname FROM auth";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo " Name: " . $row["fname"]. " " . $row["lname"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?>
 <h1 style="text-align:center;">Courses </h1>
 
 <div class="container">
