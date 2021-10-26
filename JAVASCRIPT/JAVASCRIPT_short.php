@@ -182,11 +182,11 @@ Book by Marijn Haverbeke</p>
         <div class="col-md-2 footer-social animated fadeInDown">
           <h4>Quick Links</h4>
           <ul>
-              <li><a href="extra.php">About us</a></li>
-              <li><a href="extra.php">Contact Us</a></li>
-              <li><a href="extra.php">Privacy Policy</a></li>
-              <li><a href="extra.php">Terms And Conditions</a></li>
-              <li><a href="extra.php">Help And Support</a></li>
+            <li><a href="../extra.php#about">About us</a></li>
+            <li><a href="../extra.php#contact">Contact Us</a></li>
+            <li><a href="../extra.php#privacy">Privacy Policy</a></li>
+            <li><a href="../extra.php#terms">Terms And Conditions</a></li>
+            <li><a href="../extra.php#help">Help And Support</a></li>
             </ul>
         </div>
 
