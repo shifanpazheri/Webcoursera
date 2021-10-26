@@ -83,6 +83,60 @@ a:active {
 </style>
 </head>
 <body>
+<?php
+
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['pv1'])){
+    updatedb("python","v1");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Bx19jnGg14M&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=1");
+  }
+  if(isset($_POST['pv2'])){
+    updatedb("python","v2");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=hY-ycQImdxU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=2");
+  }
+  if(isset($_POST['pv3'])){
+    updatedb("python","v3");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=RoVUweJt_pI&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=3");
+  }
+  if(isset($_POST['pv4'])){
+    updatedb("python","v4");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=-lASmlptciU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=4");
+  }
+  if(isset($_POST['pv5'])){
+    updatedb("python","v5");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=TdUcHfxLVwI&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=5");
+  }
+  if(isset($_POST['pv6'])){
+    updatedb("python","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=89RRgHL9yVE&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=6");
+  }
+  if(isset($_POST['pv7'])){
+    updatedb("python","v7");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=7kI6WLIBjdM&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=7");
+  }
+  if(isset($_POST['pv8'])){
+    updatedb("python","v8");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=ZPTjJg2WHTc&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=8");
+  }
+if(isset($_POST['pv9'])){
+    updatedb("python","v9");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=rZvO8Z4Y5Dc&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=9");
+  }
+}
+
+?>
   <script>
 function showResult(str) {
   if (str.length==0) {
@@ -153,47 +207,47 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=Bx19jnGg14M&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=1">Python Tutorial for Beginners - 1 - Introduction</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv1" name="pv1" value ="Python Tutorial for Beginners - 1 - Introduction"/></form></td>
         <td>2:21</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=hY-ycQImdxU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=2">Python Tutorial for Beginners - 2 - Install</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv2" name="pv2" value ="Python Tutorial for Beginners - 2 - Install"/></form></td>
         <td>2:57</td>
       </tr>
       <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=RoVUweJt_pI&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=3">Python Tutorial for Beginners - 3 - Variables in Python</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv3" name="pv3" value ="Python Tutorial for Beginners - 3 - Variables in Python"/></form></td>
         <td>4:42</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=-lASmlptciU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=4">Python Tutorial for Beginners - 4 - Data types - Strings</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv4" name="pv4" value ="Python Tutorial for Beginners - 4 - Data types - Strings"/></form></td>
         <td>3:45</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><a href="https://www.youtube.com/watch?v=TdUcHfxLVwI&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=5">Python Tutorial for Beginners - 5 - Data types - Strings II</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv5" name="pv5" value ="Python Tutorial for Beginners - 5 - Data types - Strings II"/></form></td>
         <td>4:45</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=89RRgHL9yVE&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=6">Python Tutorial for Beginners - 6 - Data types - Numerics</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv6" name="pv6" value ="Python Tutorial for Beginners - 6 - Data types - Numerics"/></form></td>
         <td>3:18</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><a href="https://www.youtube.com/watch?v=7kI6WLIBjdM&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=7">Python Tutorial for Beginners - 7 - Data types - Numerics 2</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv7" name="pv7" value ="Python Tutorial for Beginners - 7 - Data types - Numerics 2"/></form></td>
         <td>4:35</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=ZPTjJg2WHTc&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=8">Python Tutorial for Beginners - 8 - Lists</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv8" name="pv8" value ="Python Tutorial for Beginners - 8 - Lists"/></form></td>
         <td>4:43</td>
       </tr>
        <tr>
         <td>9</td>
-        <td><a href="https://www.youtube.com/watch?v=rZvO8Z4Y5Dc&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=9">Python Tutorial for Beginners - 9 - Lists 2</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv9" name="pv9" value ="Python Tutorial for Beginners - 9 - Lists 2"/></form></td>
         <td>4:18</td>
       </tr>
     </tbody>

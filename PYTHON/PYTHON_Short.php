@@ -81,6 +81,35 @@ a:active {
 </style>
 </head>
 <body>
+<?php
+
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['pv1'])){
+    updatedb("python","v1");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Bx19jnGg14M&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=1");
+  }
+  if(isset($_POST['pv2'])){
+    updatedb("python","v2");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=hY-ycQImdxU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=2");
+  }
+  if(isset($_POST['pv4'])){
+    updatedb("python","v4");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=-lASmlptciU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=4");
+  }
+  if(isset($_POST['pv6'])){
+    updatedb("python","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=89RRgHL9yVE&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=6");
+  }
+}
+
+?>
   <script>
 function showResult(str) {
   if (str.length==0) {
@@ -152,22 +181,22 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=Bx19jnGg14M&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=1">Python Tutorial for Beginners - 1 - Introduction</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv1" name="pv1" value ="Python Tutorial for Beginners - 1 - Introduction"/></form></td>
         <td>2:21</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=hY-ycQImdxU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=2">Python Tutorial for Beginners - 2 - Install</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv2" name="pv2" value ="Python Tutorial for Beginners - 2 - Install"/></form></td>
         <td>2:57</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=-lASmlptciU&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=4">Python Tutorial for Beginners - 4 - Data types - Strings</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv4" name="pv4" value ="Python Tutorial for Beginners - 4 - Data types - Strings"/></form></td>
         <td>3:45</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=89RRgHL9yVE&list=PLr6-GrHUlVf8num0GwJbdt0qKoIAxUIG6&index=6">Python Tutorial for Beginners - 6 - Data types - Numerics</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="pv6" name="pv6" value ="Python Tutorial for Beginners - 6 - Data types - Numerics"/></form></td>
         <td>3:18</td>
       </tr>
     </tbody>

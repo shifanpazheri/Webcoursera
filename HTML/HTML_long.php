@@ -83,6 +83,35 @@ a:active {
 </style>
 </head>
 <body>
+<?php
+
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['hv3'])){
+    updatedb("html","v3");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=3");
+  }
+  if(isset($_POST['hv4'])){
+    updatedb("html","v4");
+    unset($_POST);
+    header("location:https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=4");
+  }
+  if(isset($_POST['hv5'])){
+    updatedb("html","v5");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=5");
+  }
+  if(isset($_POST['hv8'])){
+    updatedb("html","v8");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=8");
+  }
+}
+
+?>
   <script>
 function showResult(str) {
   if (str.length==0) {
@@ -153,22 +182,22 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=3">Elements-Tags-Attributes in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv3" name="hv3" value ="Elements-Tags-Attributes in HTML"/></form></td>
         <td>11:25</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=4">Formatting Tags in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv4" name="hv4" value ="Formatting Tags in HTML"/></form></td>
         <td>13:38</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=5">Styles and CSS in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv5" name="hv5" value ="Styles and CSS in HTML"/></form></td>
         <td>11:05</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=8">Phrase Tags in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv8" name="hv8" value ="Phrase Tags in HTML"/></form></td>
         <td>10:13</td>
       </tr>
     </tbody>
