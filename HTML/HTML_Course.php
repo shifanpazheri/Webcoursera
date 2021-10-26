@@ -84,7 +84,7 @@ a:active {
 </style>
 </head>
 <body>
-  <script>
+ <script>
 function showResult(str) {
   if (str.length==0) {
     document.getElementById("livesearch").innerHTML="";
@@ -102,6 +102,56 @@ function showResult(str) {
   xmlhttp.send();
 }
 </script>
+<?php
+session_start();
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['hv1'])){
+    updatedb("html","v1");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=ExsuwzamwH0&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5");
+  }
+  if(isset($_POST['hv2'])){
+    updatedb("html","v2");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=fG1d6Agq78o&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=2");
+  }
+  if(isset($_POST['hv3'])){
+    updatedb("html","v3");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=3");
+  }
+  if(isset($_POST['hv4'])){
+    updatedb("html","v4");
+    unset($_POST);
+    header("location:https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=4");
+  }
+  if(isset($_POST['hv5'])){
+    updatedb("html","v5");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=5");
+  }
+  if(isset($_POST['hv6'])){
+    updatedb("html","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=6");
+  }
+  if(isset($_POST['hv7'])){
+    updatedb("html","v7");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=7");
+  }
+  if(isset($_POST['hv8'])){
+    updatedb("html","v8");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=8");
+  }
+}
+
+?>
+ 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -111,14 +161,15 @@ function showResult(str) {
         <li class="active"><a href="../home.php">Home</a></li>
         <li><a href="#" >Categories</a></li>
         <?php
-        session_start();
+        
         if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
           echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
           echo "<li><a href=\"../logout.php\">Log Out</a></li>";
         } else {
 
           echo "<li><a href=\"../login.php\">Log In</a></li>";
-        }?>
+        }
+?>
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
         <p>
@@ -154,42 +205,42 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=ExsuwzamwH0&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5">Overview of HTML</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="hv1" name="hv1" value ="Overview of HTML"/></form></td>
         <td>04:42</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=fG1d6Agq78o&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=2">My first HTML program</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv2" name="hv2" value ="My first HTML program"/></form></td>
         <td>06:51</td>
       </tr>
       <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=3">Elements-Tags-Attributes in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv3" name="hv3" value ="Elements-Tags-Attributes in HTML"/></form></td>
         <td>11:25</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=4">Formatting Tags in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv4" name="hv4" value ="Formatting Tags in HTML"/></form></td>
         <td>13:38</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=5">Styles and CSS in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv5" name="hv5" value ="Styles and CSS in HTML"/></form></td>
         <td>11:05</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=6">Lists in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv6" name="hv6" value ="Lists in HTML"/></form></td>
         <td>08:05</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=7">Tables in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv7" name="hv7" value ="Tables in HTML"/></form></td>
         <td>09:31</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=8">Phrase Tags in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv8" name="hv8" value ="Phrase Tags in HTML"/></form></td>
         <td>10:13</td>
       </tr>
     </tbody>

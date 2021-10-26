@@ -83,6 +83,35 @@ a:active {
 </style>
 </head>
 <body>
+<?php
+
+  include ("../func.php") ; 
+  
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+  if(isset($_POST['hv1'])){
+    updatedb("html","v1");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=ExsuwzamwH0&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5");
+  }
+  if(isset($_POST['hv2'])){
+    updatedb("html","v2");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=fG1d6Agq78o&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=2");
+  }
+  if(isset($_POST['hv6'])){
+    updatedb("html","v6");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=6");
+  }
+  if(isset($_POST['hv7'])){
+    updatedb("html","v7");
+    unset($_POST);
+    header("location: https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=7");
+  }
+}
+
+?>
   <script>
 function showResult(str) {
   if (str.length==0) {
@@ -153,22 +182,22 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=ExsuwzamwH0&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5">Overview of HTML</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="hv1" name="hv1" value ="Overview of HTML"/></form></td>
         <td>04:42</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=fG1d6Agq78o&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=2">My first HTML program</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv2" name="hv2" value ="My first HTML program"/></form></td>
         <td>06:51</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=6">Lists in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv6" name="hv6" value ="Lists in HTML"/></form></td>
         <td>08:05</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><a href="https://www.youtube.com/watch?v=Murn0xZGrG4&list=PLqLNUdJt9E4cSWpo8aIJ9GQf3EgzDJMi5&index=7">Tables in HTML</a></td>
+ <td><form method="POST" action="#"><input type="submit"  id="hv7" name="hv7" value ="Tables in HTML"/></form></td>
         <td>09:31</td>
       </tr>
     </tbody>
