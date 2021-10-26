@@ -194,10 +194,30 @@ $conn->close();
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<div><a class="btn btn-primary" href="HTML\HTML_Course.php" role="button">View Course</a></div>
+<?php 
+    
+    include ("func1.php") ; 
+    if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
+      if(checkenroll("html",$_SESSION["username"])==1){
+        echo '<div><a class="btn btn-primary" href="HTML\HTML_Course.php" role="button">Continue Learning</a></div>' ;
+        
+      }
+      else {
+        echo '<div><a class="btn btn-primary" href="html1.php" role="button">Enroll Now</a></div>' ;
+        echo checkenroll("html",$_SESSION["username"]) ;
+      }
+
+    } else {
+
+      echo '<div><a class="btn btn-primary" href="login.php" role="button">Enroll Now</a></div>' ;
+    }
+    echo '<div>No of Online Users: ';
+    online("html") ;echo '</div>' ;
+?>
+
 </td>
         <td style="text-align:center;" ><div><a href="CSS\CSS_Course.php">
-<img src="CSS.png" alt="CSS" height=200 width=200">
+<img src="CSS.png" alt="CSS" height=200 width=200>
 </a>
 </div>
 <span class="fa fa-star checked"></span>
@@ -205,7 +225,25 @@ $conn->close();
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star "></span>
-<div><a class="btn btn-primary" href="CSS\CSS_Course.php" role="button">View Course</a></div>
+<?php 
+    
+    
+    if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
+      if(checkenroll("css",$_SESSION["username"])==1){
+        echo '<div><a class="btn btn-primary" href="CSS\CSS_Course.php" role="button">Continue Learning</a></div>' ;
+      }
+      else {
+        echo '<div><a class="btn btn-primary" href="css1.php" role="button">Enroll Now</a></div>' ;
+      }
+
+    } else {
+
+      echo '<div><a class="btn btn-primary" href="login.php" role="button">Enroll Now</a></div>' ;
+    }
+    echo '<div>No of Online Users: ';
+    online("css") ;echo '</div>' ;
+?>
+
 </td>
         <td style="text-align:center;"><div><a href="JAVASCRIPT\JAVASCRIPT_Course.php">
 <img src="JAVASCRIPT.png" alt="JAVASCRIPT" height=200 width=200>
@@ -216,7 +254,24 @@ $conn->close();
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<div><a class="btn btn-primary" href="JAVASCRIPT\JAVASCRIPT_Course.php" role="button">View Course</a></div>
+<?php 
+    
+    
+    if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
+      if(checkenroll("javascript",$_SESSION["username"])==1){
+        echo '<div><a class="btn btn-primary" href="JAVASCRIPT\JAVASCRIPT_Course.php" role="button">Continue Learning</a></div>' ;
+      }
+      else {
+        echo '<div><a class="btn btn-primary" href="javascript1.php" role="button">Enroll Now</a></div>' ;
+      }
+
+    } else {
+
+      echo '<div><a class="btn btn-primary" href="login.php" role="button">Enroll Now</a></div>' ;
+    }echo '<div>No of Online Users: ';
+    online("javascript") ;echo '</div>' ;
+?>
+
 </td>
       </tr>
     </tbody>
@@ -240,7 +295,26 @@ $conn->close();
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star "></span>
-<div><a class="btn btn-primary" href="JAVA\JAVA_Course.php" role="button">View Course</a></div>
+<?php 
+    
+    
+    if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
+      if(checkenroll("java",$_SESSION["username"])==1){
+        echo '<div><a class="btn btn-primary" href="JAVA\JAVA_Course.php" role="button">Continue Learning</a></div>' ;
+      }
+      else {
+        echo '<div><a class="btn btn-primary" href="java1.php" role="button">Enroll Now</a></div>' ;
+      }
+
+    } else {
+
+      echo '<div><a class="btn btn-primary" href="login.php" role="button">Enroll Now</a></div>' ;
+    }
+    
+    echo '<div>No of Online Users: ';
+    online("java") ;echo '</div>' ;
+?>
+
 </td>
         <td style="text-align:center;"><div><a href="AJAX\AJAX_Course.php">
 <img src="AJAX.png" alt="AJAX" height=200 width=200>
@@ -251,7 +325,22 @@ $conn->close();
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<div><a class="btn btn-primary" href="AJAX\AJAX_Course.php" role="button">View Course</a></div>
+<?php 
+ 
+    if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
+      if(checkenroll("ajax",$_SESSION["username"])==1){
+        echo '<div><a class="btn btn-primary" href="AJAX\AJAX_Course.php" role="button">Continue Learning</a></div>' ;
+      }
+      else {
+        echo '<div><a class="btn btn-primary" href="ajax1.php" role="button">Enroll Now</a></div>' ;
+      }
+
+    } else {
+
+      echo '<div><a class="btn btn-primary" href="login.php" role="button">Enroll Now</a></div>' ;
+    }echo '<div>No of Online Users: ';
+    online("ajax") ;echo '</div>' ;
+?>
 </td>
         <td style="text-align:center;"><div><a href="PYTHON\PYTHON_Course.php">
 <img src="PYTHON.png" alt="PYTHON" height=200 width=200>
@@ -261,7 +350,22 @@ $conn->close();
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<div><a class="btn btn-primary" href="PYTHON\PYTHON_Course.php" role="button">View Course</a></div>
+<?php 
+
+    if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
+      if(checkenroll("python",$_SESSION["username"])==1){
+        echo '<div><a class="btn btn-primary" href="PYTHON\PYTHON_Course.php" role="button">Continue Learning</a></div>' ;
+      }
+      else {
+        echo '<div><a class="btn btn-primary" href="python1.php" role="button">Enroll Now</a></div>' ;
+      }
+
+    } else {
+
+      echo '<div><a class="btn btn-primary" href="login.php" role="button">Enroll Now</a></div>' ;
+    }echo '<div>No of Online Users: ';
+    online("python") ;echo '</div>' ;
+?>
 </td>
       </tr>
     </tbody>
