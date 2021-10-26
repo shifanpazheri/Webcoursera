@@ -83,44 +83,25 @@ a:active {
 </style>
 </head>
 <body>
-  <script>
-function showResult(str) {
-  if (str.length==0) {
-    document.getElementById("livesearch").innerHTML="";
-    document.getElementById("livesearch").style.border="0px";
-    return;
-  }
-  var xmlhttp=new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("livesearch").innerHTML=this.responseText;
-      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-    }
-  }
-  xmlhttp.open("GET","../livesearch.php?q="+str,true);
-  xmlhttp.send();
-}
-</script>
-
 <?php
-  include ("../func.php") ;
-
+  include ("../func.php") ; 
+  
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-
-
+  
+  
   if(isset($_POST['av2'])){
     updatedb("ajax","v2");
     unset($_POST);
     header("location: https://www.youtube.com/watch?v=lX5e0_3hvOw&list=PL75533094B526EBAC&index=2");
   }
-
+  
   if(isset($_POST['av4'])){
     updatedb("ajax","v4");
     unset($_POST);
     header("location: https://www.youtube.com/watch?v=c3Dcyz9PDwc&list=PL75533094B526EBAC&index=4");
   }
-
-
+  
+  
   if(isset($_POST['av7'])){
     updatedb("ajax","v7");
     unset($_POST);
@@ -144,25 +125,24 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <?php
 
       session_start();
-      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
+      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){ 
         echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
         echo "<li><a href=\"../logout.php\">Log Out</a></li>";
       } else {
-
+        
         echo "<li><a href=\"../login.php\">Log In</a></li>";
       }?>
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
+
+
         <p>
             <div class="input-group" >
-              <form>
-              <input type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search Courses...."  style=" padding-bottom: 12px padding-top: 12px;">
-              <div id="livesearch"></div>
-            </form>
-            <span class="input-group-btn">
-              <button class="btn btn-default" size: "30" stype="button"  style="font-size: 9px;"><span class="glyphicon glyphicon-search"></span></button>
-            </span>
-            </div>
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" style="padding-top: 6px;"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div><!-- /input-group -->
          </p>
     </div>
     </div>
@@ -175,8 +155,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   <p>Professional Ajax, 2nd Edition</p>
   <p>Head First Ajax</p>
   <h3 >No of Lectures: 8</h3>
-
-<h3>Current Category: <button type="button" class="btn btn-secondary"><td><a href="AJAX_long.php">Long</a> </td></h3></button>
+  <h3>Current Category: <button type="button" class="btn btn-secondary"><td><a href="AJAX_long.php">Long</a> </td></h3></button>
 <h3>Categories: <button type="button" class="btn btn-secondary"><td><a href="AJAX_short.php">Short</a></button> <td><button type="button" class="btn btn-secondary"><a href="AJAX_long.php">Long</a> </button></td></h3>
 
   <table class="table table-condensed">

@@ -83,27 +83,6 @@ a:active {
 </style>
 </head>
 <body>
-<<<<<<< HEAD
-  <script>
-function showResult(str) {
-  if (str.length==0) {
-    document.getElementById("livesearch").innerHTML="";
-    document.getElementById("livesearch").style.border="0px";
-    return;
-  }
-  var xmlhttp=new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("livesearch").innerHTML=this.responseText;
-      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-    }
-  }
-  xmlhttp.open("GET","../livesearch.php?q="+str,true);
-  xmlhttp.send();
-}
-</script>
-  <nav class="navbar navbar-inverse">
-=======
 <?php
 
 include ("../func.php") ; 
@@ -133,7 +112,6 @@ if(isset($_POST['cv6'])){
 }
 ?>
 <nav class="navbar navbar-inverse">
->>>>>>> 5ce089450019d4b01010b4aefcbd16638dbb5e6c
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Webcoursera</a>
@@ -152,16 +130,15 @@ if(isset($_POST['cv6'])){
         }?>
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
+
+
         <p>
             <div class="input-group" >
-              <form>
-              <input type="text" size="30" onkeyup="showResult(this.value)" placeholder="Search Courses...."  style=" padding-bottom: 12px padding-top: 12px;">
-              <div id="livesearch"></div>
-            </form>
-            <span class="input-group-btn">
-              <button class="btn btn-default" size: "30" stype="button"  style="font-size: 9px;"><span class="glyphicon glyphicon-search"></span></button>
-            </span>
-            </div>
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" style="padding-top: 6px;"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div><!-- /input-group -->
          </p>
     </div>
     </div>
