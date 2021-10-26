@@ -192,12 +192,12 @@ Book by Marijn Haverbeke</p>
             <h4>Courses</h4>
             <div class="col-md-6">
                   <ul class="pages">
-                      <li><a href="PYTHON_Course.php">PYTHON</a></li>
-                      <li><a href="AJAX_Course.php">AJAX</a></li>
-                      <li><a href="JAVA_Course.php">JAVA</a></li>
-                      <li><a href="JAVASCRIPT_Course.php">JAVASCRIPT</a></li>
-                      <li><a href="HTML_Course.php">HTML</a></li>
-                      <li><a href="CSS_Course.php">CSS</a></li>
+                    <li><a href="../PYTHON/PYTHON_Course.php">PYTHON</a></li>
+                    <li><a href="../AJAX/AJAX_Course.php">AJAX</a></li>
+                    <li><a href="../JAVA/JAVA_Course.php">JAVA</a></li>
+                    <li><a href="../JAVASCRIPT/JAVASCRIPT_Course.php">JAVASCRIPT</a></li>
+                    <li><a href="../HTML/HTML_Course.php">HTML</a></li>
+                    <li><a href="../CSS/CSS_Course.php">CSS</a></li>
                   </ul>
               </div>
         </div>
