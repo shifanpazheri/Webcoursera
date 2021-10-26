@@ -84,6 +84,7 @@ a:active {
 </head>
 <body>
 <?php
+
   include ("../func.php") ;
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -93,20 +94,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     unset($_POST);
     header("location: https://www.youtube.com/watch?v=dtrWHL9Asec&list=PL75533094B526EBAC&index=1");
   }
-  if(isset($_POST['av2'])){
-    updatedb("ajax","v2");
-    unset($_POST);
-    header("location: https://www.youtube.com/watch?v=lX5e0_3hvOw&list=PL75533094B526EBAC&index=2");
-  }
   if(isset($_POST['av3'])){
     updatedb("ajax","v3");
     unset($_POST);
     header("location: https://www.youtube.com/watch?v=ZImyZeO4VBc&list=PL75533094B526EBAC&index=3");
-  }
-  if(isset($_POST['av4'])){
-    updatedb("ajax","v4");
-    unset($_POST);
-    header("location: https://www.youtube.com/watch?v=c3Dcyz9PDwc&list=PL75533094B526EBAC&index=4");
   }
   if(isset($_POST['av5'])){
     updatedb("ajax","v5");
@@ -117,16 +108,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     updatedb("ajax","v6");
     unset($_POST);
     header("location: https://www.youtube.com/watch?v=UhUCg11M5Nw&list=PL75533094B526EBAC&index=6");
-  }
-  if(isset($_POST['av7'])){
-    updatedb("ajax","v7");
-    unset($_POST);
-    header("location: https://www.youtube.com/watch?v=uthxzVAo4ws&list=PL75533094B526EBAC&index=7");
-  }
-  if(isset($_POST['av8'])){
-    updatedb("ajax","v8");
-    unset($_POST);
-    header("location: https://www.youtube.com/watch?v=A6iu0Ma1xl4&list=PL75533094B526EBAC&index=8");
   }
 }
 
@@ -141,14 +122,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <li class="active"><a href="../home.php">Home</a></li>
         <li><a href="#" >Categories</a></li>
         <?php
-        session_start();
-        if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
-          echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
-          echo "<li><a href=\"../logout.php\">Log Out</a></li>";
-        } else {
 
-          echo "<li><a href=\"../login.php\">Log In</a></li>";
-        }?>
+      session_start();
+      if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){ 
+        echo "<li><a> Welcome ".$_SESSION["name"]. " </a></li>" ;
+        echo "<li><a href=\"../logout.php\">Log Out</a></li>";
+      } else {
+        
+        echo "<li><a href=\"../login.php\">Log In</a></li>";
+      }?>
+
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
 

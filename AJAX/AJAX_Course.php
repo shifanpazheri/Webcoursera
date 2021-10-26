@@ -84,10 +84,11 @@ a:active {
 </head>
 <body>
 <?php
-  include ("../func.php") ;
 
+  include ("../func.php") ; 
+  
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-
+  
   if(isset($_POST['av1'])){
     updatedb("ajax","v1");
     unset($_POST);
@@ -130,8 +131,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   }
 }
 
-
-
 ?>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -141,6 +140,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
       <ul class="nav navbar-nav">
         <li class="active"><a href="../home.php">Home</a></li>
         <li><a href="#" >Categories</a></li>
+
         <?php
         session_start();
         if ((isset($_SESSION["logg"])) && ($_SESSION["logg"]==="1")){
@@ -150,6 +150,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
           echo "<li><a href=\"../login.php\">Log In</a></li>";
         }?>
+
       </ul>
       <div style="display: flex; justify-content: flex-end;padding-top: 12px;" >
 
@@ -172,7 +173,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   <p>Professional Ajax, 2nd Edition</p>
   <p>Head First Ajax</p>
   <h3 >No of Lectures: 8</h3>
-  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX/AJAX_short.php">Short</a></button> <td><a href="/AJAX_long.php"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
+
+  <h3>Categories: <button type="button" class="btn btn-secondary"><a href="AJAX_short.php">Short</a></button> <td><a href="AJAX_long.php"><button type="button" class="btn btn-secondary">Long</a></button> </h3>
+
   <table class="table table-condensed">
     <thead  style="background-color: #737373;">
       <tr>
