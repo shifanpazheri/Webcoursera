@@ -83,6 +83,7 @@ a:active {
 </style>
 </head>
 <body>
+<<<<<<< HEAD
   <script>
 function showResult(str) {
   if (str.length==0) {
@@ -102,6 +103,37 @@ function showResult(str) {
 }
 </script>
   <nav class="navbar navbar-inverse">
+=======
+<?php
+
+include ("../func.php") ; 
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+if(isset($_POST['cv1'])){
+  updatedb("css","v1");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C");
+}
+if(isset($_POST['cv2'])){
+  updatedb("css","v2");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=2");
+}
+if(isset($_POST['cv5'])){
+  updatedb("css","v5");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=5");
+}
+if(isset($_POST['cv6'])){
+  updatedb("css","v6");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=6");
+}
+}
+?>
+<nav class="navbar navbar-inverse">
+>>>>>>> 5ce089450019d4b01010b4aefcbd16638dbb5e6c
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Webcoursera</a>
@@ -151,24 +183,24 @@ function showResult(str) {
       </tr>
     </thead>
     <tbody>
-      <tr>
+    <tr>
         <td>1</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C">Introduction to CSS</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv1" name="cv1" value ="Introduction to CSS"/></form></td>
         <td>06:34</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=2">Changing font type, color, and size</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv2" name="cv2" value ="Changing font type, color, and size"/></form></td>
         <td>04:06</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=5"> Inheritance and overriding</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv5" name="cv5" value ="Inheritance and overriding"/></form></td>
         <td>04:28</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=6">Using Classes in CSS</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv6" name="cv6" value ="Using Classes in CSS"/></form></td>
         <td>04:10</td>
       </tr>
     </tbody>

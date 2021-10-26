@@ -83,6 +83,7 @@ a:active {
 </style>
 </head>
 <body>
+<<<<<<< HEAD
   <script>
 function showResult(str) {
   if (str.length==0) {
@@ -101,6 +102,37 @@ function showResult(str) {
   xmlhttp.send();
 }
 </script>
+=======
+<?php
+
+include ("../func.php") ; 
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+if(isset($_POST['cv3'])){
+  updatedb("css","v3");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=3");
+}
+if(isset($_POST['cv4'])){
+  updatedb("css","v4");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=4");
+}
+
+if(isset($_POST['cv7'])){
+  updatedb("css","v7");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=7");
+}
+if(isset($_POST['cv8'])){
+  updatedb("css","v8");
+  unset($_POST);
+  header("location: https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=8");
+}
+}
+?>  
+>>>>>>> 5ce089450019d4b01010b4aefcbd16638dbb5e6c
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -151,24 +183,26 @@ function showResult(str) {
       </tr>
     </thead>
     <tbody>
-      <tr>
+      
+    <tr>
         <td>3</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=3"> Multiple selectors and writing rule for more than one element</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv3" name="cv3" value ="Multiple selectors and writing rule for more than one element"/></form></td>
         <td>01:53</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=4">Add a line to header and border property</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv4" name="cv4" value ="Add a line to header and border property"/></form></td>
         <td>01:37</td>
       </tr>
+     
       <tr>
         <td>7</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=7"> More on Classes in CSS</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv7" name="cv7" value ="More on Classes in CSS"/></form></td>
         <td>03:39</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=8"> Font Family</a></td>
+        <td><form method="POST" action="#"><input type="submit"  id="cv8" name="cv8" value ="Font Family"/></form></td>
         <td>03:16</td>
       </tr>
     </tbody>
