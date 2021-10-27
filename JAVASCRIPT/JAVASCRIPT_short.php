@@ -60,7 +60,9 @@
   @media (min-width: 768px) {
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
-    body { background-color: #e6e6e6 ; }
+    body { background-color: #e6e6e6 ;
+color: white;
+ background-image: url("bg1.jpg"); }
     a:link {
     color: black;
   }
@@ -185,22 +187,22 @@ Book by Marijn Haverbeke</p>
     <tbody>
       <tr>
         <td>1</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv1" name="jsv1"  value ="Introduction"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv1" name="jsv1"  value ="Introduction"/></form></td>
         <td>02:44</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv2" name="jsv2" value ="Why you should Learn JavaScript Today"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv2" name="jsv2" value ="Why you should Learn JavaScript Today"/></form></td>
         <td>06:48</td>
       </tr>
       <tr>
         <td>5</td>
-<td><form method="POST" action="#"><input type="submit"  id="jsv5" name="jsv5" value ="Statements and comments"/></form></td>
+<td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv5" name="jsv5" value ="Statements and comments"/></form></td>
         <td>06:21</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv7" name="jsv7" value ="Variables & Data Types"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv7" name="jsv7" value ="Variables & Data Types"/></form></td>
         <td>09:31</td>
       </tr>
     </tbody>

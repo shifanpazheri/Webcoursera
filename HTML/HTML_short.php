@@ -61,7 +61,9 @@
   @media (min-width: 768px) {
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
-  body { background-color: #e6e6e6 ; }
+  body { background-color: #e6e6e6 ;
+color: white;
+ background-image: url("bg1.jpg"); }
   a:link {
   color: black;
 }
@@ -182,22 +184,22 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><form method="POST" action="#"><input type="submit"  id="hv1" name="hv1" value ="Overview of HTML"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="hv1" name="hv1" value ="Overview of HTML"/></form></td>
         <td>04:42</td>
       </tr>
       <tr>
         <td>2</td>
- <td><form method="POST" action="#"><input type="submit"  id="hv2" name="hv2" value ="My first HTML program"/></form></td>
+ <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="hv2" name="hv2" value ="My first HTML program"/></form></td>
         <td>06:51</td>
       </tr>
       <tr>
         <td>6</td>
- <td><form method="POST" action="#"><input type="submit"  id="hv6" name="hv6" value ="Lists in HTML"/></form></td>
+ <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="hv6" name="hv6" value ="Lists in HTML"/></form></td>
         <td>08:05</td>
       </tr>
       <tr>
         <td>7</td>
- <td><form method="POST" action="#"><input type="submit"  id="hv7" name="hv7" value ="Tables in HTML"/></form></td>
+ <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="hv7" name="hv7" value ="Tables in HTML"/></form></td>
         <td>09:31</td>
       </tr>
     </tbody>

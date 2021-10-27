@@ -61,7 +61,10 @@
   @media (min-width: 768px) {
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
-  body { background-color: #e6e6e6 ; }
+  body { background-color: #e6e6e6 ; 
+color: white;
+ background-image: url("bg1.jpg");
+}
   a:link {
   color: black;
 }
@@ -187,27 +190,27 @@ function showResult(str) {
     </thead>
     <tbody>
         <td>3</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv3" name="pv3" value ="Python Tutorial for Beginners - 3 - Variables in Python"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv3" name="pv3" value ="Python Tutorial for Beginners - 3 - Variables in Python"/></form></td>
         <td>4:42</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv5" name="pv5" value ="Python Tutorial for Beginners - 5 - Data types - Strings II"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv5" name="pv5" value ="Python Tutorial for Beginners - 5 - Data types - Strings II"/></form></td>
         <td>4:45</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv7" name="pv7" value ="Python Tutorial for Beginners - 7 - Data types - Numerics 2"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv7" name="pv7" value ="Python Tutorial for Beginners - 7 - Data types - Numerics 2"/></form></td>
         <td>4:35</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv8" name="pv8" value ="Python Tutorial for Beginners - 8 - Lists"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv8" name="pv8" value ="Python Tutorial for Beginners - 8 - Lists"/></form></td>
         <td>4:43</td>
       </tr>
        <tr>
         <td>9</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv9" name="pv9" value ="Python Tutorial for Beginners - 9 - Lists 2"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv9" name="pv9" value ="Python Tutorial for Beginners - 9 - Lists 2"/></form></td>
         <td>4:18</td>
       </tr>
     </tbody>

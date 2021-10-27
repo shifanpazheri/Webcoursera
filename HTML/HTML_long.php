@@ -61,7 +61,10 @@
   @media (min-width: 768px) {
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
-body { background-color: #e6e6e6 ; }
+body { background-color: #e6e6e6 ; 
+ background-image: url("bg1.jpg");
+color: white;
+}
   a:link {
   color: black;
 }
@@ -182,22 +185,22 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>3</td>
- <td><form method="POST" action="#"><input type="submit"  id="hv3" name="hv3" value ="Elements-Tags-Attributes in HTML"/></form></td>
+ <td style="color: #000000;" ><form method="POST" action="#"><input type="submit"  id="hv3" name="hv3" value ="Elements-Tags-Attributes in HTML"/></form></td>
         <td>11:25</td>
       </tr>
       <tr>
         <td>4</td>
- <td><form method="POST" action="#"><input type="submit"  id="hv4" name="hv4" value ="Formatting Tags in HTML"/></form></td>
+ <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="hv4" name="hv4" value ="Formatting Tags in HTML"/></form></td>
         <td>13:38</td>
       </tr>
       <tr>
         <td>5</td>
- <td><form method="POST" action="#"><input type="submit"  id="hv5" name="hv5" value ="Styles and CSS in HTML"/></form></td>
+ <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="hv5" name="hv5" value ="Styles and CSS in HTML"/></form></td>
         <td>11:05</td>
       </tr>
       <tr>
         <td>8</td>
- <td><form method="POST" action="#"><input type="submit"  id="hv8" name="hv8" value ="Phrase Tags in HTML"/></form></td>
+ <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="hv8" name="hv8" value ="Phrase Tags in HTML"/></form></td>
         <td>10:13</td>
       </tr>
     </tbody>
