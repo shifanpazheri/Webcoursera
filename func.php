@@ -40,6 +40,7 @@ function checkdb($table, $conn,$user){
       $sql = "DELETE from ".$table." WHERE `username` ='$user'" ; 
 
       if ($conn->query($sql) === TRUE) {
+
         echo "Record updated successfully";
       } else {
         echo "Error updating record: " . $conn->error;
