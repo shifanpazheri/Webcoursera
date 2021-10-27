@@ -61,7 +61,9 @@
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
 
-    body { background-color: #e6e6e6 ; }
+    body { background-color: #e6e6e6 ; 
+color: white;
+ background-image: url("bg1.jpg");}
     a:link {
     color: black;
   }
@@ -186,22 +188,22 @@ Book by Marijn Haverbeke</p>
     <tbody>
       <tr>
         <td>3</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv3" name="jsv3" value =What is Dom? | Document Object Model"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv3" name="jsv3" value =What is Dom? | Document Object Model"/></form></td>
         <td>10:26</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv4" name="jsv4" value ="First Hello World Program"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv4" name="jsv4" value ="First Hello World Program"/></form></td>
         <td>10:02</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv6" name="jsv6" value ="VS code Theme & Live Server Plugin Setup"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv6" name="jsv6" value ="VS code Theme & Live Server Plugin Setup"/></form></td>
         <td>12:07</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv8" name="jsv8" value ="Operators"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv8" name="jsv8" value ="Operators"/></form></td>
         <td>12:28</td>
       </tr>
     </tbody>

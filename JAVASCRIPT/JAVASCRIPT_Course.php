@@ -62,7 +62,9 @@
   }
 
 
-    body { background-color: #e6e6e6 ; }
+    body { background-color: #e6e6e6 ; 
+color: white;
+ background-image: url("bg1.jpg");}
     a:link {
     color: black;
   }
@@ -207,42 +209,42 @@ Book by Marijn Haverbeke</p>
     <tbody>
       <tr>
         <td>1</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv1" name="jsv1"  value ="Introduction"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv1" name="jsv1"  value ="Introduction"/></form></td>
         <td>02:44</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv2" name="jsv2" value ="Why you should Learn JavaScript Today"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv2" name="jsv2" value ="Why you should Learn JavaScript Today"/></form></td>
         <td>06:48</td>
       </tr>
       <tr>
         <td>3</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv3" name="jsv3" value =What is Dom? | Document Object Model"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv3" name="jsv3" value =What is Dom? | Document Object Model"/></form></td>
         <td>10:26</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv4" name="jsv4" value ="First Hello World Program"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv4" name="jsv4" value ="First Hello World Program"/></form></td>
         <td>10:02</td>
       </tr>
       <tr>
         <td>5</td>
-<td><form method="POST" action="#"><input type="submit"  id="jsv5" name="jsv5" value ="Statements and comments"/></form></td>
+<td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv5" name="jsv5" value ="Statements and comments"/></form></td>
         <td>06:21</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv6" name="jsv6" value ="VS code Theme & Live Server Plugin Setup"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv6" name="jsv6" value ="VS code Theme & Live Server Plugin Setup"/></form></td>
         <td>12:07</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv7" name="jsv7" value ="Variables & Data Types"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv7" name="jsv7" value ="Variables & Data Types"/></form></td>
         <td>09:31</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jsv8" name="jsv8" value ="Operators"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jsv8" name="jsv8" value ="Operators"/></form></td>
         <td>12:28</td>
       </tr>
     </tbody>

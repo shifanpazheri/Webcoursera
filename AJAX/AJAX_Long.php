@@ -61,7 +61,9 @@
   @media (min-width: 768px) {
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
-  body { background-color: #e6e6e6 ; }
+  body { background-color: #e6e6e6 ; 
+color: white;
+ background-image: url("bg1.jpg");}
   a:link {
   color: black;
 }
@@ -191,22 +193,22 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <tbody>
       <tr>
         <td>2</td>
-        <td><form method="POST" action="#"><input type="submit"  id="av2" name="av2" value ="Ajax Tutorial 2 System Requirements"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="av2" name="av2" value ="Ajax Tutorial 2 System Requirements"/></form></td>
         <td>06:35</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><form method="POST" action="#"><input type="submit"  id="av4" name="av4" value ="Ajax tutorial 4 Modifying Web Pages on the Fly"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="av4" name="av4" value ="Ajax tutorial 4 Modifying Web Pages on the Fly"/></form></td>
         <td>05:30</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><form method="POST" action="#"><input type="submit"  id="av7" name="av7" value ="Dragging and Dropping HTML Elements With Ajax - 7"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="av7" name="av7" value ="Dragging and Dropping HTML Elements With Ajax - 7"/></form></td>
         <td>05:43</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><form method="POST" action="#"><input type="submit"  id="av8" name="av8" value ="Getting instant login feedback Ajax Tutorial 8"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="av8" name="av8" value ="Getting instant login feedback Ajax Tutorial 8"/></form></td>
         <td>10:13</td>
       </tr>
     </tbody>

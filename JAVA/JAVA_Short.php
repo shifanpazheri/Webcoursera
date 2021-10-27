@@ -62,7 +62,9 @@
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
 
-  body { background-color: #e6e6e6 ; }
+  body { background-color: #e6e6e6 ;
+color: white;
+ background-image: url("bg1.jpg"); }
   a:link {
   color: black;
 }
@@ -192,27 +194,27 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jv1" name="jv1" value ="Java Strings Tutorial"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv1" name="jv1" value ="Java Strings Tutorial"/></form></td>
         <td>09:04</td>
       </tr>
       <tr>
         <td>5</td>
-<td><form method="POST" action="#"><input type="submit"  id="jv5" name="jv5" value ="Java File I/O (Reading and Writing)"/></form></td>
+<td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv5" name="jv5" value ="Java File I/O (Reading and Writing)"/></form></td>
         <td>06:58</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jv6" name="jv6" value ="Java Enum Tutorial"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv6" name="jv6" value ="Java Enum Tutorial"/></form></td>
         <td>06:23</td>
       </tr>
        <tr>
         <td>9</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jv9" name="jv9" value ="Java Streams Tutorial"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv9" name="jv9" value ="Java Streams Tutorial"/></form></td>
         <td>07:56</td>
       </tr>
        <tr>
         <td>10</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jv10" name="jv10" value ="Array List vs Linked List | Which one should you use??"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv10" name="jv10" value ="Array List vs Linked List | Which one should you use??"/></form></td>
         <td>07:57</td>
       </tr>
     </tbody>

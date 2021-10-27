@@ -61,7 +61,9 @@
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
 
-  body { background-color: #e6e6e6 ; }
+  body { background-color: #e6e6e6 ;
+color: white;
+ background-image: url("bg1.jpg"); }
   a:link {
   color: black;
 }
@@ -191,26 +193,26 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>2</td>
-         <td><form method="POST" action="#"><input type="submit"  id="jv2" name="jv2" value ="Java Classes and Objects"/></form></td>
+         <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv2" name="jv2" value ="Java Classes and Objects"/></form></td>
        <td>11:36</td>
       </tr>
       <tr>
         <td>3</td>
-<td><form method="POST" action="#"><input type="submit"  id="jv3" name="jv3" value ="Java Interface Tutorial"/></form></td>
+<td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv3" name="jv3" value ="Java Interface Tutorial"/></form></td>
         <td>14:49</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jv4" name="jv4" value ="Java Exception Handling Tutorial"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv4" name="jv4" value ="Java Exception Handling Tutorial"/></form></td>
         <td>11:39</td>
       </tr>
         <td>7</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jv7" name="jv7" value ="Java Generics Tutorial"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv7" name="jv7" value ="Java Generics Tutorial"/></form></td>
         <td>12:23</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><form method="POST" action="#"><input type="submit"  id="jv8" name="jv8" value ="Object Oriented Programming - The Four Pillars of OOP"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="jv8" name="jv8" value ="Object Oriented Programming - The Four Pillars of OOP"/></form></td>
         <td>11:23</td>
       </tr>
     </tbody>

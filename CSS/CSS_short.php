@@ -61,7 +61,10 @@
   @media (min-width: 768px) {
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
-  body { background-color: #e6e6e6 ; }
+  body { background-color: #e6e6e6 ; 
+color: white;
+ background-image: url("bg1.jpg");
+}
   a:link {
   color: black;
 }
@@ -186,23 +189,23 @@ if(isset($_POST['cv8'])){
 
     <tr>
         <td>3</td>
-        <td><form method="POST" action="#"><input type="submit"  id="cv3" name="cv3" value ="Multiple selectors and writing rule for more than one element"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="cv3" name="cv3" value ="Multiple selectors and writing rule for more than one element"/></form></td>
         <td>01:53</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><form method="POST" action="#"><input type="submit"  id="cv4" name="cv4" value ="Add a line to header and border property"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="cv4" name="cv4" value ="Add a line to header and border property"/></form></td>
         <td>01:37</td>
       </tr>
 
       <tr>
         <td>7</td>
-        <td><form method="POST" action="#"><input type="submit"  id="cv7" name="cv7" value ="More on Classes in CSS"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="cv7" name="cv7" value ="More on Classes in CSS"/></form></td>
         <td>03:39</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><form method="POST" action="#"><input type="submit"  id="cv8" name="cv8" value ="Font Family"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="cv8" name="cv8" value ="Font Family"/></form></td>
         <td>03:16</td>
       </tr>
     </tbody>

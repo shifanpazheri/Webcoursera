@@ -61,7 +61,9 @@
   @media (min-width: 768px) {
     .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
   }
- body { background-color: #e6e6e6 ; }
+ body { background-color: #e6e6e6 ; 
+color: white;
+ background-image: url("bg1.jpg");}
   a:link {
   color: black;
 }
@@ -181,22 +183,22 @@ function showResult(str) {
     <tbody>
       <tr>
         <td>1</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv1" name="pv1" value ="Python Tutorial for Beginners - 1 - Introduction"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv1" name="pv1" value ="Python Tutorial for Beginners - 1 - Introduction"/></form></td>
         <td>2:21</td>
       </tr>
       <tr>
         <td>2</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv2" name="pv2" value ="Python Tutorial for Beginners - 2 - Install"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv2" name="pv2" value ="Python Tutorial for Beginners - 2 - Install"/></form></td>
         <td>2:57</td>
       </tr>
       <tr>
         <td>4</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv4" name="pv4" value ="Python Tutorial for Beginners - 4 - Data types - Strings"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv4" name="pv4" value ="Python Tutorial for Beginners - 4 - Data types - Strings"/></form></td>
         <td>3:45</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><form method="POST" action="#"><input type="submit"  id="pv6" name="pv6" value ="Python Tutorial for Beginners - 6 - Data types - Numerics"/></form></td>
+        <td style="color: #000000;"><form method="POST" action="#"><input type="submit"  id="pv6" name="pv6" value ="Python Tutorial for Beginners - 6 - Data types - Numerics"/></form></td>
         <td>3:18</td>
       </tr>
     </tbody>
